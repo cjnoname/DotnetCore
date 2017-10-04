@@ -1,0 +1,22 @@
+@model DotnetCore.Model.Requests.ImportStudentRequest
+@{
+    ViewData["Title"] = "Import";
+}
+
+<h2>Import</h2>
+
+<form asp-action="DoImport">
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label asp-for="FileKey" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="FileKey" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Import" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
